@@ -1,5 +1,5 @@
-﻿Public Class BasComn
+﻿Module basComn
 
     Public toolName As String = "Client Condition Management"
 
-End Class
+End Module
