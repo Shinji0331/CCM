@@ -21,8 +21,8 @@ Public Class frmMain
 #End Region
 
 #Region "サイドバーボタン"
-    Private Sub serchBtn_Click(sender As Object, e As EventArgs) Handles serchBtn.Click
-        AbrirFormEnPanel(Of Form1)()
+    Private Sub settingBtn_Click(sender As Object, e As EventArgs) Handles settingBtn.Click
+        AbrirFormEnPanel(Of frmSetting)()
     End Sub
 
 #End Region

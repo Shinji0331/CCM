@@ -26,7 +26,7 @@ Partial Class frmMain
         Me.header = New System.Windows.Forms.Panel()
         Me.Panel1 = New System.Windows.Forms.Panel()
         Me.sidebar = New System.Windows.Forms.Panel()
-        Me.Button1 = New System.Windows.Forms.Button()
+        Me.settingBtn = New System.Windows.Forms.Button()
         Me.Button2 = New System.Windows.Forms.Button()
         Me.PanelFormularios = New System.Windows.Forms.Panel()
         Me.sidebar.SuspendLayout()
@@ -34,55 +34,56 @@ Partial Class frmMain
         '
         'header
         '
-        Me.header.BackColor = System.Drawing.Color.WhiteSmoke
+        Me.header.BackColor = System.Drawing.Color.Gainsboro
         Me.header.Dock = System.Windows.Forms.DockStyle.Top
-        Me.header.Location = New System.Drawing.Point(338, 0)
-        Me.header.Margin = New System.Windows.Forms.Padding(2, 4, 2, 4)
+        Me.header.Location = New System.Drawing.Point(119, 0)
+        Me.header.Margin = New System.Windows.Forms.Padding(1, 2, 1, 2)
         Me.header.Name = "header"
-        Me.header.Size = New System.Drawing.Size(2373, 94)
+        Me.header.Size = New System.Drawing.Size(881, 29)
         Me.header.TabIndex = 1
         '
         'Panel1
         '
         Me.Panel1.Dock = System.Windows.Forms.DockStyle.Top
         Me.Panel1.Location = New System.Drawing.Point(0, 0)
-        Me.Panel1.Margin = New System.Windows.Forms.Padding(2, 4, 2, 4)
+        Me.Panel1.Margin = New System.Windows.Forms.Padding(1, 2, 1, 2)
         Me.Panel1.Name = "Panel1"
-        Me.Panel1.Size = New System.Drawing.Size(338, 94)
+        Me.Panel1.Size = New System.Drawing.Size(119, 29)
         Me.Panel1.TabIndex = 0
         '
         'sidebar
         '
         Me.sidebar.BackColor = System.Drawing.Color.FromArgb(CType(CType(51, Byte), Integer), CType(CType(51, Byte), Integer), CType(CType(76, Byte), Integer))
-        Me.sidebar.Controls.Add(Me.Button1)
+        Me.sidebar.Controls.Add(Me.settingBtn)
         Me.sidebar.Controls.Add(Me.Button2)
         Me.sidebar.Controls.Add(Me.Panel1)
         Me.sidebar.Dock = System.Windows.Forms.DockStyle.Left
         Me.sidebar.Location = New System.Drawing.Point(0, 0)
-        Me.sidebar.Margin = New System.Windows.Forms.Padding(2, 4, 2, 4)
+        Me.sidebar.Margin = New System.Windows.Forms.Padding(1, 2, 1, 2)
         Me.sidebar.Name = "sidebar"
-        Me.sidebar.Size = New System.Drawing.Size(338, 1300)
+        Me.sidebar.Size = New System.Drawing.Size(119, 700)
         Me.sidebar.TabIndex = 0
         '
-        'Button1
+        'settingBtn
         '
-        Me.Button1.BackColor = System.Drawing.Color.FromArgb(CType(CType(51, Byte), Integer), CType(CType(51, Byte), Integer), CType(CType(76, Byte), Integer))
-        Me.Button1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None
-        Me.Button1.Dock = System.Windows.Forms.DockStyle.Top
-        Me.Button1.FlatAppearance.BorderColor = System.Drawing.Color.White
-        Me.Button1.FlatAppearance.BorderSize = 0
-        Me.Button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.Button1.Font = New System.Drawing.Font("メイリオ", 10.0!)
-        Me.Button1.ForeColor = System.Drawing.SystemColors.ButtonHighlight
-        Me.Button1.Image = CType(resources.GetObject("Button1.Image"), System.Drawing.Image)
-        Me.Button1.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
-        Me.Button1.Location = New System.Drawing.Point(0, 190)
-        Me.Button1.Margin = New System.Windows.Forms.Padding(2, 4, 2, 4)
-        Me.Button1.Name = "Button1"
-        Me.Button1.Size = New System.Drawing.Size(338, 96)
-        Me.Button1.TabIndex = 6
-        Me.Button1.Text = "Setting"
-        Me.Button1.UseVisualStyleBackColor = False
+        Me.settingBtn.BackColor = System.Drawing.Color.FromArgb(CType(CType(51, Byte), Integer), CType(CType(51, Byte), Integer), CType(CType(76, Byte), Integer))
+        Me.settingBtn.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None
+        Me.settingBtn.Dock = System.Windows.Forms.DockStyle.Top
+        Me.settingBtn.FlatAppearance.BorderColor = System.Drawing.Color.White
+        Me.settingBtn.FlatAppearance.BorderSize = 0
+        Me.settingBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.settingBtn.Font = New System.Drawing.Font("メイリオ", 10.0!)
+        Me.settingBtn.ForeColor = System.Drawing.SystemColors.ButtonHighlight
+        Me.settingBtn.Image = CType(resources.GetObject("settingBtn.Image"), System.Drawing.Image)
+        Me.settingBtn.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
+        Me.settingBtn.Location = New System.Drawing.Point(0, 77)
+        Me.settingBtn.Margin = New System.Windows.Forms.Padding(1, 2, 1, 2)
+        Me.settingBtn.Name = "settingBtn"
+        Me.settingBtn.Size = New System.Drawing.Size(119, 48)
+        Me.settingBtn.TabIndex = 6
+        Me.settingBtn.Text = "Setting"
+        Me.settingBtn.TextAlign = System.Drawing.ContentAlignment.MiddleRight
+        Me.settingBtn.UseVisualStyleBackColor = False
         '
         'Button2
         '
@@ -96,35 +97,37 @@ Partial Class frmMain
         Me.Button2.ForeColor = System.Drawing.SystemColors.ButtonHighlight
         Me.Button2.Image = CType(resources.GetObject("Button2.Image"), System.Drawing.Image)
         Me.Button2.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
-        Me.Button2.Location = New System.Drawing.Point(0, 94)
-        Me.Button2.Margin = New System.Windows.Forms.Padding(2, 4, 2, 4)
+        Me.Button2.Location = New System.Drawing.Point(0, 29)
+        Me.Button2.Margin = New System.Windows.Forms.Padding(1, 2, 1, 2)
         Me.Button2.Name = "Button2"
-        Me.Button2.Size = New System.Drawing.Size(338, 96)
+        Me.Button2.Size = New System.Drawing.Size(119, 48)
         Me.Button2.TabIndex = 5
         Me.Button2.Text = "List"
+        Me.Button2.TextAlign = System.Drawing.ContentAlignment.MiddleRight
         Me.Button2.UseVisualStyleBackColor = False
         '
         'PanelFormularios
         '
         Me.PanelFormularios.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.PanelFormularios.Location = New System.Drawing.Point(338, 94)
+        Me.PanelFormularios.Location = New System.Drawing.Point(119, 29)
+        Me.PanelFormularios.Margin = New System.Windows.Forms.Padding(1, 2, 1, 2)
         Me.PanelFormularios.Name = "PanelFormularios"
-        Me.PanelFormularios.Size = New System.Drawing.Size(2373, 1206)
+        Me.PanelFormularios.Size = New System.Drawing.Size(881, 671)
         Me.PanelFormularios.TabIndex = 2
         '
-        'MainForm
+        'frmMain
         '
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(13.0!, 24.0!)
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 12.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.AutoSize = True
         Me.BackColor = System.Drawing.Color.White
-        Me.ClientSize = New System.Drawing.Size(2711, 1300)
+        Me.ClientSize = New System.Drawing.Size(1000, 700)
         Me.Controls.Add(Me.PanelFormularios)
         Me.Controls.Add(Me.header)
         Me.Controls.Add(Me.sidebar)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None
-        Me.Margin = New System.Windows.Forms.Padding(2, 4, 2, 4)
-        Me.Name = "MainForm"
+        Me.Margin = New System.Windows.Forms.Padding(1, 2, 1, 2)
+        Me.Name = "frmMain"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "Form1"
         Me.sidebar.ResumeLayout(False)
@@ -134,7 +137,7 @@ Partial Class frmMain
     Friend WithEvents header As Panel
     Friend WithEvents Panel1 As Panel
     Friend WithEvents sidebar As Panel
-    Friend WithEvents Button1 As Button
+    Friend WithEvents settingBtn As Button
     Friend WithEvents Button2 As Button
     Friend WithEvents PanelFormularios As Panel
 End Class
