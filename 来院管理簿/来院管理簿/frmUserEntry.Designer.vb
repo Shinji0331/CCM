@@ -25,10 +25,10 @@ Partial Class frmUserEntry
         Me.Label2 = New System.Windows.Forms.Label()
         Me.Label3 = New System.Windows.Forms.Label()
         Me.Label1 = New System.Windows.Forms.Label()
-        Me.TextBox1 = New System.Windows.Forms.TextBox()
-        Me.TextBox2 = New System.Windows.Forms.TextBox()
-        Me.TextBox3 = New System.Windows.Forms.TextBox()
-        Me.Button1 = New System.Windows.Forms.Button()
+        Me.newUserIdtxt = New System.Windows.Forms.TextBox()
+        Me.newUserEntryPassTxt = New System.Windows.Forms.TextBox()
+        Me.newUserEntryRePassTxt = New System.Windows.Forms.TextBox()
+        Me.newUserEntryBtn = New System.Windows.Forms.Button()
         Me.Button2 = New System.Windows.Forms.Button()
         Me.SuspendLayout()
         '
@@ -62,36 +62,36 @@ Partial Class frmUserEntry
         Me.Label1.TabIndex = 3
         Me.Label1.Text = "ID"
         '
-        'TextBox1
+        'newUserIdtxt
         '
-        Me.TextBox1.Location = New System.Drawing.Point(116, 40)
-        Me.TextBox1.Name = "TextBox1"
-        Me.TextBox1.Size = New System.Drawing.Size(215, 19)
-        Me.TextBox1.TabIndex = 4
+        Me.newUserIdtxt.Location = New System.Drawing.Point(116, 40)
+        Me.newUserIdtxt.Name = "newUserIdtxt"
+        Me.newUserIdtxt.Size = New System.Drawing.Size(215, 19)
+        Me.newUserIdtxt.TabIndex = 4
         '
-        'TextBox2
+        'newUserEntryPassTxt
         '
-        Me.TextBox2.Location = New System.Drawing.Point(116, 83)
-        Me.TextBox2.Name = "TextBox2"
-        Me.TextBox2.Size = New System.Drawing.Size(215, 19)
-        Me.TextBox2.TabIndex = 5
+        Me.newUserEntryPassTxt.Location = New System.Drawing.Point(116, 83)
+        Me.newUserEntryPassTxt.Name = "newUserEntryPassTxt"
+        Me.newUserEntryPassTxt.Size = New System.Drawing.Size(215, 19)
+        Me.newUserEntryPassTxt.TabIndex = 5
         '
-        'TextBox3
+        'newUserEntryRePassTxt
         '
-        Me.TextBox3.Location = New System.Drawing.Point(115, 127)
-        Me.TextBox3.Name = "TextBox3"
-        Me.TextBox3.Size = New System.Drawing.Size(215, 19)
-        Me.TextBox3.TabIndex = 6
+        Me.newUserEntryRePassTxt.Location = New System.Drawing.Point(115, 127)
+        Me.newUserEntryRePassTxt.Name = "newUserEntryRePassTxt"
+        Me.newUserEntryRePassTxt.Size = New System.Drawing.Size(215, 19)
+        Me.newUserEntryRePassTxt.TabIndex = 6
         '
-        'Button1
+        'newUserEntryBtn
         '
-        Me.Button1.BackColor = System.Drawing.Color.White
-        Me.Button1.Location = New System.Drawing.Point(23, 173)
-        Me.Button1.Name = "Button1"
-        Me.Button1.Size = New System.Drawing.Size(119, 34)
-        Me.Button1.TabIndex = 7
-        Me.Button1.Text = "新規登録"
-        Me.Button1.UseVisualStyleBackColor = False
+        Me.newUserEntryBtn.BackColor = System.Drawing.Color.White
+        Me.newUserEntryBtn.Location = New System.Drawing.Point(23, 173)
+        Me.newUserEntryBtn.Name = "newUserEntryBtn"
+        Me.newUserEntryBtn.Size = New System.Drawing.Size(119, 34)
+        Me.newUserEntryBtn.TabIndex = 7
+        Me.newUserEntryBtn.Text = "新規登録"
+        Me.newUserEntryBtn.UseVisualStyleBackColor = False
         '
         'Button2
         '
@@ -110,10 +110,10 @@ Partial Class frmUserEntry
         Me.BackColor = System.Drawing.Color.FromArgb(CType(CType(51, Byte), Integer), CType(CType(51, Byte), Integer), CType(CType(76, Byte), Integer))
         Me.ClientSize = New System.Drawing.Size(355, 246)
         Me.Controls.Add(Me.Button2)
-        Me.Controls.Add(Me.Button1)
-        Me.Controls.Add(Me.TextBox3)
-        Me.Controls.Add(Me.TextBox2)
-        Me.Controls.Add(Me.TextBox1)
+        Me.Controls.Add(Me.newUserEntryBtn)
+        Me.Controls.Add(Me.newUserEntryRePassTxt)
+        Me.Controls.Add(Me.newUserEntryPassTxt)
+        Me.Controls.Add(Me.newUserIdtxt)
         Me.Controls.Add(Me.Label1)
         Me.Controls.Add(Me.Label3)
         Me.Controls.Add(Me.Label2)
@@ -127,9 +127,9 @@ Partial Class frmUserEntry
     Friend WithEvents Label2 As Label
     Friend WithEvents Label3 As Label
     Friend WithEvents Label1 As Label
-    Friend WithEvents TextBox1 As TextBox
-    Friend WithEvents TextBox2 As TextBox
-    Friend WithEvents TextBox3 As TextBox
-    Friend WithEvents Button1 As Button
+    Friend WithEvents newUserIdtxt As TextBox
+    Friend WithEvents newUserEntryPassTxt As TextBox
+    Friend WithEvents newUserEntryRePassTxt As TextBox
+    Friend WithEvents newUserEntryBtn As Button
     Friend WithEvents Button2 As Button
 End Class

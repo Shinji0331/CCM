@@ -79,6 +79,55 @@ Public Class ClsDBAccess
     End Function
 #End Region
 
+#Region "テーブル情報変更処理"
+    Public Function runSQL(strSQL As String) As Boolean
+
+        '' テーブル情報の変更
+        Dim checkFlg As Boolean
+
+        '' コネクションオープン
+        dbCnc.Open()
+
+        Dim dbCmd As OleDbCommand = dbCnc.CreateCommand
+        Dim dbTrz As OleDbTransaction = dbCnc.BeginTransaction
+
+        '' コマンド接続
+        dbCmd.Connection = dbCnc
+
+        '' トランザクション開始
+        dbCmd.Transaction = dbTrz
+
+        Try
+            '' リスト内のSQL文をセット
+            dbCmd.CommandText = strSQL
+
+            '' SQL実行
+            dbCmd.ExecuteNonQuery()
+
+            '' コミット
+            dbTrz.Commit()
+
+            checkFlg = True
+        Catch ex As Exception
+
+            '' エラーメッセージ表示
+            MessageBox.Show(dbCmd.CommandText & vbCrLf & vbCrLf & ex.Message, toolName, MessageBoxButtons.OK, MessageBoxIcon.Error)
+
+            '' エラー時はロールバック
+            dbTrz.Rollback()
+        Finally
+
+            '' コマンドを破棄
+            dbCmd.Dispose()
+
+            '' コネクションを閉じる
+            dbCnc.Close()
+        End Try
+
+        Return checkFlg
+    End Function
+#End Region
+
 #Region "Dispose処理"
 
     Private Sub Dispose()
