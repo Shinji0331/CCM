@@ -23,7 +23,6 @@ Partial Class frmMain
     <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(frmMain))
-        Me.header = New System.Windows.Forms.Panel()
         Me.Panel1 = New System.Windows.Forms.Panel()
         Me.sidebar = New System.Windows.Forms.Panel()
         Me.settingBtn = New System.Windows.Forms.Button()
@@ -31,16 +30,6 @@ Partial Class frmMain
         Me.PanelFormularios = New System.Windows.Forms.Panel()
         Me.sidebar.SuspendLayout()
         Me.SuspendLayout()
-        '
-        'header
-        '
-        Me.header.BackColor = System.Drawing.Color.Gainsboro
-        Me.header.Dock = System.Windows.Forms.DockStyle.Top
-        Me.header.Location = New System.Drawing.Point(119, 0)
-        Me.header.Margin = New System.Windows.Forms.Padding(1, 2, 1, 2)
-        Me.header.Name = "header"
-        Me.header.Size = New System.Drawing.Size(881, 29)
-        Me.header.TabIndex = 1
         '
         'Panel1
         '
@@ -109,10 +98,10 @@ Partial Class frmMain
         'PanelFormularios
         '
         Me.PanelFormularios.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.PanelFormularios.Location = New System.Drawing.Point(119, 29)
+        Me.PanelFormularios.Location = New System.Drawing.Point(119, 0)
         Me.PanelFormularios.Margin = New System.Windows.Forms.Padding(1, 2, 1, 2)
         Me.PanelFormularios.Name = "PanelFormularios"
-        Me.PanelFormularios.Size = New System.Drawing.Size(881, 671)
+        Me.PanelFormularios.Size = New System.Drawing.Size(881, 700)
         Me.PanelFormularios.TabIndex = 2
         '
         'frmMain
@@ -123,9 +112,8 @@ Partial Class frmMain
         Me.BackColor = System.Drawing.Color.White
         Me.ClientSize = New System.Drawing.Size(1000, 700)
         Me.Controls.Add(Me.PanelFormularios)
-        Me.Controls.Add(Me.header)
         Me.Controls.Add(Me.sidebar)
-        Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None
+        Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle
         Me.Margin = New System.Windows.Forms.Padding(1, 2, 1, 2)
         Me.Name = "frmMain"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
@@ -134,7 +122,6 @@ Partial Class frmMain
         Me.ResumeLayout(False)
 
     End Sub
-    Friend WithEvents header As Panel
     Friend WithEvents Panel1 As Panel
     Friend WithEvents sidebar As Panel
     Friend WithEvents settingBtn As Button

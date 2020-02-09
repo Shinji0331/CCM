@@ -26,3 +26,4 @@ C:\Users\shinji\source\repos\Shinji0331\CCM\来院管理簿\来院管理簿\obj\
 C:\Users\shinji\source\repos\Shinji0331\CCM\来院管理簿\来院管理簿\obj\Debug\来院管理簿.frmClientEntry.resources
 C:\Users\shinji\source\repos\Shinji0331\CCM\来院管理簿\来院管理簿\obj\Debug\来院管理簿.frmMain.resources
 C:\Users\shinji\source\repos\Shinji0331\CCM\来院管理簿\来院管理簿\obj\Debug\来院管理簿.frmSetting.resources
+C:\Users\shinji\source\repos\Shinji0331\CCM\来院管理簿\来院管理簿\obj\Debug\来院管理簿.frmUserEntry.resources
