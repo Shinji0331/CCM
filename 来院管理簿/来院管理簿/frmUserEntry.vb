@@ -6,6 +6,8 @@
         '' パスワードマスク処理
         newUserEntryPassTxt.PasswordChar = "*"c
         newUserEntryRePassTxt.PasswordChar = "*"c
+
+        Me.Opacity = 0.8
     End Sub
 
 #End Region
