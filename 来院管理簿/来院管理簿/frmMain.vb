@@ -29,5 +29,9 @@ Public Class frmMain
 
     End Sub
 
+    Private Sub PanelFormularios_Paint(sender As Object, e As PaintEventArgs) Handles PanelFormularios.Paint
+
+    End Sub
+
 #End Region
 End Class

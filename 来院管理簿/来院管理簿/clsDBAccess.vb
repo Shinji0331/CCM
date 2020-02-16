@@ -1,6 +1,7 @@
 ﻿Imports System.Data.OleDb
 Imports Microsoft.VisualBasic.ControlChars
 Public Class ClsDBAccess
+    Implements IDisposable
 
 #Region "変数宣言"
 
@@ -130,7 +131,7 @@ Public Class ClsDBAccess
 
 #Region "Dispose処理"
 
-    Private Sub Dispose()
+    Private Sub IDisposable_Dispose() Implements IDisposable.Dispose
         Try
             If dbAdp Is Nothing Then
             Else

@@ -37,7 +37,7 @@ Partial Class frmMain
         Me.Panel1.Location = New System.Drawing.Point(0, 0)
         Me.Panel1.Margin = New System.Windows.Forms.Padding(1, 2, 1, 2)
         Me.Panel1.Name = "Panel1"
-        Me.Panel1.Size = New System.Drawing.Size(119, 29)
+        Me.Panel1.Size = New System.Drawing.Size(119, 73)
         Me.Panel1.TabIndex = 0
         '
         'sidebar
@@ -65,7 +65,7 @@ Partial Class frmMain
         Me.settingBtn.ForeColor = System.Drawing.SystemColors.ButtonHighlight
         Me.settingBtn.Image = CType(resources.GetObject("settingBtn.Image"), System.Drawing.Image)
         Me.settingBtn.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
-        Me.settingBtn.Location = New System.Drawing.Point(0, 77)
+        Me.settingBtn.Location = New System.Drawing.Point(0, 121)
         Me.settingBtn.Margin = New System.Windows.Forms.Padding(1, 2, 1, 2)
         Me.settingBtn.Name = "settingBtn"
         Me.settingBtn.Size = New System.Drawing.Size(119, 48)
@@ -86,7 +86,7 @@ Partial Class frmMain
         Me.Button2.ForeColor = System.Drawing.SystemColors.ButtonHighlight
         Me.Button2.Image = CType(resources.GetObject("Button2.Image"), System.Drawing.Image)
         Me.Button2.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
-        Me.Button2.Location = New System.Drawing.Point(0, 29)
+        Me.Button2.Location = New System.Drawing.Point(0, 73)
         Me.Button2.Margin = New System.Windows.Forms.Padding(1, 2, 1, 2)
         Me.Button2.Name = "Button2"
         Me.Button2.Size = New System.Drawing.Size(119, 48)
@@ -113,7 +113,7 @@ Partial Class frmMain
         Me.ClientSize = New System.Drawing.Size(1000, 700)
         Me.Controls.Add(Me.PanelFormularios)
         Me.Controls.Add(Me.sidebar)
-        Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle
+        Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None
         Me.Margin = New System.Windows.Forms.Padding(1, 2, 1, 2)
         Me.Name = "frmMain"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen

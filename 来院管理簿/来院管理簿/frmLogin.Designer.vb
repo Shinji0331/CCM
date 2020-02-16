@@ -27,7 +27,7 @@ Partial Class frmLogin
         Me.btnMinimize = New System.Windows.Forms.PictureBox()
         Me.btnClose = New System.Windows.Forms.PictureBox()
         Me.Panel1 = New System.Windows.Forms.Panel()
-        Me.txtUserName = New System.Windows.Forms.TextBox()
+        Me.txtUserId = New System.Windows.Forms.TextBox()
         Me.Label1 = New System.Windows.Forms.Label()
         Me.Label2 = New System.Windows.Forms.Label()
         Me.txtPassword = New System.Windows.Forms.TextBox()
@@ -55,7 +55,7 @@ Partial Class frmLogin
         '
         Me.btnMinimize.Cursor = System.Windows.Forms.Cursors.Hand
         Me.btnMinimize.Image = CType(resources.GetObject("btnMinimize.Image"), System.Drawing.Image)
-        Me.btnMinimize.Location = New System.Drawing.Point(346, 12)
+        Me.btnMinimize.Location = New System.Drawing.Point(354, 12)
         Me.btnMinimize.Name = "btnMinimize"
         Me.btnMinimize.Size = New System.Drawing.Size(26, 20)
         Me.btnMinimize.TabIndex = 3
@@ -65,7 +65,7 @@ Partial Class frmLogin
         '
         Me.btnClose.Cursor = System.Windows.Forms.Cursors.Hand
         Me.btnClose.Image = CType(resources.GetObject("btnClose.Image"), System.Drawing.Image)
-        Me.btnClose.Location = New System.Drawing.Point(378, 7)
+        Me.btnClose.Location = New System.Drawing.Point(386, 7)
         Me.btnClose.Name = "btnClose"
         Me.btnClose.Size = New System.Drawing.Size(17, 17)
         Me.btnClose.TabIndex = 2
@@ -75,38 +75,39 @@ Partial Class frmLogin
         '
         Me.Panel1.BackColor = System.Drawing.Color.FromArgb(CType(CType(30, Byte), Integer), CType(CType(38, Byte), Integer), CType(CType(70, Byte), Integer))
         Me.Panel1.Dock = System.Windows.Forms.DockStyle.Bottom
-        Me.Panel1.Location = New System.Drawing.Point(0, 505)
+        Me.Panel1.Location = New System.Drawing.Point(0, 405)
         Me.Panel1.Name = "Panel1"
         Me.Panel1.Size = New System.Drawing.Size(415, 15)
         Me.Panel1.TabIndex = 1
         '
-        'txtUserName
+        'txtUserId
         '
-        Me.txtUserName.BackColor = System.Drawing.Color.FromArgb(CType(CType(80, Byte), Integer), CType(CType(94, Byte), Integer), CType(CType(129, Byte), Integer))
-        Me.txtUserName.BorderStyle = System.Windows.Forms.BorderStyle.None
-        Me.txtUserName.Font = New System.Drawing.Font("Century Gothic", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.txtUserName.Location = New System.Drawing.Point(57, 192)
-        Me.txtUserName.Name = "txtUserName"
-        Me.txtUserName.Size = New System.Drawing.Size(286, 20)
-        Me.txtUserName.TabIndex = 2
+        Me.txtUserId.BackColor = System.Drawing.Color.FromArgb(CType(CType(80, Byte), Integer), CType(CType(94, Byte), Integer), CType(CType(129, Byte), Integer))
+        Me.txtUserId.BorderStyle = System.Windows.Forms.BorderStyle.None
+        Me.txtUserId.Font = New System.Drawing.Font("Century Gothic", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.txtUserId.ForeColor = System.Drawing.Color.White
+        Me.txtUserId.Location = New System.Drawing.Point(56, 93)
+        Me.txtUserId.Name = "txtUserId"
+        Me.txtUserId.Size = New System.Drawing.Size(286, 20)
+        Me.txtUserId.TabIndex = 2
         '
         'Label1
         '
         Me.Label1.AutoSize = True
         Me.Label1.Font = New System.Drawing.Font("Century Gothic", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label1.ForeColor = System.Drawing.Color.Silver
-        Me.Label1.Location = New System.Drawing.Point(53, 168)
+        Me.Label1.Location = New System.Drawing.Point(52, 69)
         Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(90, 21)
+        Me.Label1.Size = New System.Drawing.Size(27, 21)
         Me.Label1.TabIndex = 3
-        Me.Label1.Text = "UserName"
+        Me.Label1.Text = "ID"
         '
         'Label2
         '
         Me.Label2.AutoSize = True
         Me.Label2.Font = New System.Drawing.Font("Century Gothic", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label2.ForeColor = System.Drawing.Color.Silver
-        Me.Label2.Location = New System.Drawing.Point(53, 258)
+        Me.Label2.Location = New System.Drawing.Point(52, 159)
         Me.Label2.Name = "Label2"
         Me.Label2.Size = New System.Drawing.Size(82, 21)
         Me.Label2.TabIndex = 5
@@ -117,7 +118,8 @@ Partial Class frmLogin
         Me.txtPassword.BackColor = System.Drawing.Color.FromArgb(CType(CType(80, Byte), Integer), CType(CType(94, Byte), Integer), CType(CType(129, Byte), Integer))
         Me.txtPassword.BorderStyle = System.Windows.Forms.BorderStyle.None
         Me.txtPassword.Font = New System.Drawing.Font("Century Gothic", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.txtPassword.Location = New System.Drawing.Point(57, 282)
+        Me.txtPassword.ForeColor = System.Drawing.Color.White
+        Me.txtPassword.Location = New System.Drawing.Point(56, 183)
         Me.txtPassword.Name = "txtPassword"
         Me.txtPassword.Size = New System.Drawing.Size(286, 20)
         Me.txtPassword.TabIndex = 4
@@ -127,7 +129,7 @@ Partial Class frmLogin
         Me.CheckBox1.AutoSize = True
         Me.CheckBox1.Font = New System.Drawing.Font("Century Gothic", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.CheckBox1.ForeColor = System.Drawing.Color.Silver
-        Me.CheckBox1.Location = New System.Drawing.Point(57, 330)
+        Me.CheckBox1.Location = New System.Drawing.Point(56, 231)
         Me.CheckBox1.Name = "CheckBox1"
         Me.CheckBox1.Size = New System.Drawing.Size(123, 21)
         Me.CheckBox1.TabIndex = 6
@@ -141,7 +143,7 @@ Partial Class frmLogin
         Me.btnLogin.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.btnLogin.Font = New System.Drawing.Font("Century Gothic", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btnLogin.ForeColor = System.Drawing.Color.White
-        Me.btnLogin.Location = New System.Drawing.Point(57, 376)
+        Me.btnLogin.Location = New System.Drawing.Point(56, 277)
         Me.btnLogin.Name = "btnLogin"
         Me.btnLogin.Size = New System.Drawing.Size(286, 37)
         Me.btnLogin.TabIndex = 7
@@ -151,7 +153,7 @@ Partial Class frmLogin
         'Label3
         '
         Me.Label3.AutoSize = True
-        Me.Label3.Location = New System.Drawing.Point(97, 474)
+        Me.Label3.Location = New System.Drawing.Point(96, 375)
         Me.Label3.Name = "Label3"
         Me.Label3.Size = New System.Drawing.Size(0, 12)
         Me.Label3.TabIndex = 8
@@ -161,7 +163,7 @@ Partial Class frmLogin
         Me.LinkLabel1.AutoSize = True
         Me.LinkLabel1.Font = New System.Drawing.Font("Century Gothic", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.LinkLabel1.LinkColor = System.Drawing.Color.Silver
-        Me.LinkLabel1.Location = New System.Drawing.Point(55, 445)
+        Me.LinkLabel1.Location = New System.Drawing.Point(54, 346)
         Me.LinkLabel1.Name = "LinkLabel1"
         Me.LinkLabel1.Size = New System.Drawing.Size(113, 17)
         Me.LinkLabel1.TabIndex = 9
@@ -173,7 +175,7 @@ Partial Class frmLogin
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 12.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.FromArgb(CType(CType(46, Byte), Integer), CType(CType(59, Byte), Integer), CType(CType(104, Byte), Integer))
-        Me.ClientSize = New System.Drawing.Size(415, 520)
+        Me.ClientSize = New System.Drawing.Size(415, 420)
         Me.Controls.Add(Me.LinkLabel1)
         Me.Controls.Add(Me.Label3)
         Me.Controls.Add(Me.btnLogin)
@@ -181,7 +183,7 @@ Partial Class frmLogin
         Me.Controls.Add(Me.Label2)
         Me.Controls.Add(Me.txtPassword)
         Me.Controls.Add(Me.Label1)
-        Me.Controls.Add(Me.txtUserName)
+        Me.Controls.Add(Me.txtUserId)
         Me.Controls.Add(Me.Panel1)
         Me.Controls.Add(Me.pnlTitleBar)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None
@@ -202,7 +204,7 @@ Partial Class frmLogin
     Friend WithEvents Panel1 As Panel
     Friend WithEvents btnMinimize As PictureBox
     Friend WithEvents btnClose As PictureBox
-    Friend WithEvents txtUserName As TextBox
+    Friend WithEvents txtUserId As TextBox
     Friend WithEvents Label1 As Label
     Friend WithEvents Label2 As Label
     Friend WithEvents txtPassword As TextBox
