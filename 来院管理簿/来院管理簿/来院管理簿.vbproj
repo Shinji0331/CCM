@@ -74,7 +74,7 @@
     <Import Include="System.Threading.Tasks" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="clsPasswordMask.vb" />
+    <Compile Include="basSetSql.vb" />
     <Compile Include="frmClientEntry.Designer.vb">
       <DependentUpon>frmClientEntry.vb</DependentUpon>
     </Compile>

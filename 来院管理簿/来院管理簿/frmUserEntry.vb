@@ -1,33 +1,6 @@
 ﻿Imports System.Runtime.InteropServices
 Public Class frmUserEntry
 
-#Region "クローズボタン"
-    Private Sub btnClose_Click(sender As Object, e As EventArgs) Handles btnClose.Click
-        Application.Exit()
-    End Sub
-#End Region
-
-#Region "最小化ボタン"
-    Private Sub btnMinimize_Click(sender As Object, e As EventArgs) Handles btnMinimize.Click
-        Me.WindowState = FormWindowState.Minimized
-    End Sub
-#End Region
-
-#Region "フォームをドラッグで移動させる"
-    <DllImport("user32.DLL", EntryPoint:="ReleaseCapture")>
-    Private Shared Sub ReleaseCapture()
-    End Sub
-
-    <DllImport("user32.DLL", EntryPoint:="SendMessage")>
-    Private Shared Sub SendMessage(hWnd As IntPtr, wMsg As Integer, wParam As Integer, lParam As Integer)
-    End Sub
-
-    Private Sub pnlTitleBar_MouseMove(sender As Object, e As MouseEventArgs) Handles pnlTitleBar.MouseMove
-        ReleaseCapture()
-        SendMessage(Me.Handle, &H112&, &HF012&, 0)
-    End Sub
-#End Region
-
 #Region "初期表示"
     Public Sub New()
 
@@ -82,11 +55,38 @@ Public Class frmUserEntry
     End Sub
 #End Region
 
+#Region "クローズボタン"
+    Private Sub btnClose_Click(sender As Object, e As EventArgs) Handles btnClose.Click
+        Me.Close()
+    End Sub
+#End Region
+
+#Region "最小化ボタン"
+    Private Sub btnMinimize_Click(sender As Object, e As EventArgs) Handles btnMinimize.Click
+        Me.WindowState = FormWindowState.Minimized
+    End Sub
+#End Region
+
+#Region "フォームをドラッグで移動させる"
+    <DllImport("user32.DLL", EntryPoint:="ReleaseCapture")>
+    Private Shared Sub ReleaseCapture()
+    End Sub
+
+    <DllImport("user32.DLL", EntryPoint:="SendMessage")>
+    Private Shared Sub SendMessage(hWnd As IntPtr, wMsg As Integer, wParam As Integer, lParam As Integer)
+    End Sub
+
+    Private Sub pnlTitleBar_MouseMove(sender As Object, e As MouseEventArgs) Handles pnlTitleBar.MouseMove
+        ReleaseCapture()
+        SendMessage(Me.Handle, &H112&, &HF012&, 0)
+    End Sub
+#End Region
 
 #Region "Entryボタン"
 
     Private Sub btnEntry_Click(sender As Object, e As EventArgs) Handles btnEntry.Click
 
+        Dim hashPass As String
         Dim setsql As String
 
         '' IDチェック
@@ -107,13 +107,26 @@ Public Class frmUserEntry
             Exit Sub
         End If
 
+        '' ハッシュ化したパスワードを生成
+        hashPass = SHA512(txtPassword.Text)
+
+        '' ユーザ登録用SQL生成
+        setsql = sqlUserEntry(txtUserId.Text, txtPassword.Text)
+
         Using dbAccess As New ClsDBAccess(dbFilePath)
 
         End Using
     End Sub
 
 
+
+
 #End Region
 
+#Region "Calcelボタン"
+    Private Sub btnCancel_Click(sender As Object, e As EventArgs) Handles btnCancel.Click
+        Me.Close()
+    End Sub
+#End Region
 
 End Class
