@@ -1,4 +1,5 @@
 ﻿Imports System.Runtime.InteropServices
+Imports System.Windows.Forms
 Public Class frmUserEntry
 
 #Region "初期表示"
@@ -111,10 +112,26 @@ Public Class frmUserEntry
         hashPass = SHA512(txtPassword.Text)
 
         '' ユーザ登録用SQL生成
-        setsql = sqlUserEntry(txtUserId.Text, txtPassword.Text)
+        setsql = sqlUserEntry(txtUserId.Text,txtPassword.Text)
 
+        '' DBへのアクセス
         Using dbAccess As New ClsDBAccess(dbFilePath)
 
+            '' Insert文実行
+            If dbAccess.runSQL(setsql) Then
+
+                '' SQLが成功した場合
+                MessageBox.Show("新規ユーザが登録されました。",
+                                toolName,
+                                MessageBoxButtons.OK,
+                                MessageBoxIcon.Information)
+            Else
+                '' SQLが失敗した場合
+                MessageBox.Show("ユーザが登録に失敗しました。",
+                                toolName,
+                                MessageBoxButtons.OK,
+                                MessageBoxIcon.Warning)
+            End If
         End Using
     End Sub
 

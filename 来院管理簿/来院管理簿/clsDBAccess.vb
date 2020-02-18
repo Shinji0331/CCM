@@ -86,6 +86,8 @@ Public Class ClsDBAccess
         '' テーブル情報の変更
         Dim checkFlg As Boolean
 
+        dbCnc = New OleDb.OleDbConnection("Provider=Microsoft.ACE.OLEDB.12.0; " & "Data Source=" & fileName)
+
         '' コネクションオープン
         dbCnc.Open()
 

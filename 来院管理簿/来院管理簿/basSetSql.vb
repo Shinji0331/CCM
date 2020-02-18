@@ -6,7 +6,7 @@
         Dim resultSql As String = ""
 
         resultSql &= "INSERT INTO USER ( USER_ID , USER_PASS ) VALUES "
-        resultSql &= "('" & userId & ", " & password & ") "
+        resultSql &= "('" & userId & "', '" & password & "');"
 
         Return resultSql
 
