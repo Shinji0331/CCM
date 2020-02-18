@@ -86,44 +86,22 @@ Public Class ClsDBAccess
         '' テーブル情報の変更
         Dim checkFlg As Boolean
 
-        dbCnc = New OleDb.OleDbConnection("Provider=Microsoft.ACE.OLEDB.12.0; " & "Data Source=" & fileName)
-
-        '' コネクションオープン
-        dbCnc.Open()
-
-        Dim dbCmd As OleDbCommand = dbCnc.CreateCommand
-        Dim dbTrz As OleDbTransaction = dbCnc.BeginTransaction
-
-        '' コマンド接続
-        dbCmd.Connection = dbCnc
-
-        '' トランザクション開始
-        dbCmd.Transaction = dbTrz
+        Dim dbCnc As New OleDbConnection("Provider=Microsoft.ACE.OLEDB.12.0; " & "Data Source=" & fileName)
+        Dim cmd As OleDbCommand = dbCnc.CreateCommand
 
         Try
-            '' リスト内のSQL文をセット
-            dbCmd.CommandText = strSQL
 
-            '' SQL実行
-            dbCmd.ExecuteNonQuery()
+            cmd.CommandText = strSQL
 
-            '' コミット
-            dbTrz.Commit()
-
+            dbCnc.Open()
+            cmd.ExecuteNonQuery()
             checkFlg = True
+
         Catch ex As Exception
-
-            '' エラーメッセージ表示
-            MessageBox.Show(dbCmd.CommandText & vbCrLf & vbCrLf & ex.Message, toolName, MessageBoxButtons.OK, MessageBoxIcon.Error)
-
-            '' エラー時はロールバック
-            dbTrz.Rollback()
+            MessageBox.Show("テーブル情報変更処理に失敗しました。" & vbLf &
+                        ex.Message, toolName, MessageBoxButtons.OK, MessageBoxIcon.Error)
+            Return Nothing
         Finally
-
-            '' コマンドを破棄
-            dbCmd.Dispose()
-
-            '' コネクションを閉じる
             dbCnc.Close()
         End Try
 
