@@ -117,6 +117,10 @@ Public Class frmUserEntry
         '' DBへのアクセス
         Using dbAccess As New ClsDBAccess(dbFilePath)
 
+            Dim a As String = getsql()
+            Dim c As String
+            c = dbAccess.getTableRecord(a)
+
             '' Insert文実行
             If dbAccess.runSQL(setsql) Then
 

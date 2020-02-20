@@ -5,8 +5,21 @@
 
         Dim resultSql As String = ""
 
-        resultSql &= "INSERT INTO USER (USER_ID, USER_PASS) VALUES "
+        resultSql &= "INSERT INTO USER_INFO (USER_ID, USER_PASS) VALUES "
         resultSql &= "('" & userId & "', '" & password & "')"
+
+
+        Return resultSql
+
+    End Function
+#End Region
+
+#Region "取得テストL"
+    Public Function getsql() As String
+
+        Dim resultSql As String = ""
+
+        resultSql &= "SELECT USER_ID FROM USER WHERE USER_PASS = '1234'"
 
 
         Return resultSql

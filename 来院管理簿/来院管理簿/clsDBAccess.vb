@@ -50,7 +50,7 @@ Public Class ClsDBAccess
 
 #Region "テーブルレコード取得処理"
 
-    Private Function getTableRecord(ByVal strSQL As String) As String
+    Public Function getTableRecord(ByVal strSQL As String) As String
 
         Dim rtn As Object
         Dim cmd As New OleDb.OleDbCommand
