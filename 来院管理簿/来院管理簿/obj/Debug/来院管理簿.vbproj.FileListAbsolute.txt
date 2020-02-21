@@ -23,7 +23,6 @@ C:\Users\shinji\source\repos\Shinji0331\CCM\来院管理簿\来院管理簿\obj\
 C:\Users\shinji\source\repos\Shinji0331\CCM\来院管理簿\来院管理簿\obj\Debug\来院管理簿.pdb
 C:\Users\shinji\source\repos\Shinji0331\CCM\来院管理簿\来院管理簿\obj\Debug\Interop.Scripting.dll
 C:\Users\shinji\source\repos\Shinji0331\CCM\来院管理簿\来院管理簿\obj\Debug\来院管理簿.vbproj.ResolveComReference.cache
-C:\Users\shinji\source\repos\Shinji0331\CCM\来院管理簿\来院管理簿\obj\Debug\来院管理簿.frmClientEntry.resources
 C:\Users\shinji\source\repos\Shinji0331\CCM\来院管理簿\来院管理簿\obj\Debug\来院管理簿.frmMain.resources
 C:\Users\shinji\source\repos\Shinji0331\CCM\来院管理簿\来院管理簿\obj\Debug\来院管理簿.frmSetting.resources
 C:\Users\shinji\source\repos\Shinji0331\CCM\来院管理簿\来院管理簿\obj\Debug\来院管理簿.frmUserEntry.resources
@@ -31,3 +30,4 @@ C:\Users\shinji\source\repos\Shinji0331\CCM\来院管理簿\来院管理簿\obj\
 C:\Users\shinji\source\repos\Shinji0331\CCM\来院管理簿\来院管理簿\bin\Debug\Microsoft.VisualBasic.PowerPacks.dll
 C:\Users\shinji\source\repos\Shinji0331\CCM\来院管理簿\来院管理簿\bin\Debug\ja\Microsoft.VisualBasic.PowerPacks.resources.dll
 C:\Users\shinji\source\repos\Shinji0331\CCM\来院管理簿\来院管理簿\obj\Debug\来院管理簿.vbproj.CopyComplete
+C:\Users\shinji\source\repos\Shinji0331\CCM\来院管理簿\来院管理簿\obj\Debug\来院管理簿.frmClientEntry.resources

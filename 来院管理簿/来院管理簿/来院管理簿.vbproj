@@ -54,6 +54,7 @@
     <Reference Include="System.Deployment" />
     <Reference Include="System.Drawing" />
     <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Windows.Forms.DataVisualization" />
     <Reference Include="System.Xml" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
@@ -75,13 +76,13 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="basSetSql.vb" />
+    <Compile Include="clsDBAccess.vb" />
     <Compile Include="frmClientEntry.Designer.vb">
       <DependentUpon>frmClientEntry.vb</DependentUpon>
     </Compile>
     <Compile Include="frmClientEntry.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="clsDBAccess.vb" />
     <Compile Include="frmLogin.Designer.vb">
       <DependentUpon>frmLogin.vb</DependentUpon>
     </Compile>
