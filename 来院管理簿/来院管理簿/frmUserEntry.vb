@@ -88,6 +88,7 @@ Public Class frmUserEntry
     Private Sub btnEntry_Click(sender As Object, e As EventArgs) Handles btnEntry.Click
 
         Dim hashPass As String
+        Dim hashUser As String
         Dim setsql As String
 
         '' IDチェック
@@ -108,18 +109,15 @@ Public Class frmUserEntry
             Exit Sub
         End If
 
-        '' ハッシュ化したパスワードを生成
+        '' ハッシュ化したユーザとパスワードを生成
+        hashUser = SHA512(txtUserId.Text)
         hashPass = SHA512(txtPassword.Text)
 
         '' ユーザ登録用SQL生成
-        setsql = sqlUserEntry(txtUserId.Text,txtPassword.Text)
+        setsql = sqlUserEntry(hashUser, hashPass)
 
         '' DBへのアクセス
         Using dbAccess As New ClsDBAccess(dbFilePath)
-
-            Dim a As String = getsql()
-            Dim c As String
-            c = dbAccess.getTableRecord(a)
 
             '' Insert文実行
             If dbAccess.runSQL(setsql) Then

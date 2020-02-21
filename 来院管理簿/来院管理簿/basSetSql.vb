@@ -5,9 +5,10 @@
 
         Dim resultSql As String = ""
 
-        resultSql &= "INSERT INTO USER_INFO (USER_ID, USER_PASS) VALUES "
-        resultSql &= "('" & userId & "', '" & password & "')"
+        resultSql &= "INSERT INTO USER_INFO (USER_ID, USER_PASS,REGISTRATION_DATE) VALUES "
+        resultSql &= "('" & userId & "', '" & password & "', '" & System.DateTime.Now & "')"
 
+        Debug.Print(resultSql)
 
         Return resultSql
 
