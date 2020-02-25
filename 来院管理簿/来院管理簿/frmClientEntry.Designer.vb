@@ -53,6 +53,12 @@ Partial Class frmClientEntry
         Me.TextBox8 = New System.Windows.Forms.TextBox()
         Me.Label16 = New System.Windows.Forms.Label()
         Me.TextBox9 = New System.Windows.Forms.TextBox()
+        Me.Panel1 = New System.Windows.Forms.Panel()
+        Me.Button1 = New System.Windows.Forms.Button()
+        Me.Panel2 = New System.Windows.Forms.Panel()
+        Me.Button2 = New System.Windows.Forms.Button()
+        Me.Panel1.SuspendLayout()
+        Me.Panel2.SuspendLayout()
         Me.SuspendLayout()
         '
         'Label1
@@ -347,13 +353,51 @@ Partial Class frmClientEntry
         Me.TextBox9.Size = New System.Drawing.Size(398, 26)
         Me.TextBox9.TabIndex = 30
         '
+        'Panel1
+        '
+        Me.Panel1.Controls.Add(Me.Button1)
+        Me.Panel1.Location = New System.Drawing.Point(31, 916)
+        Me.Panel1.Name = "Panel1"
+        Me.Panel1.Size = New System.Drawing.Size(171, 64)
+        Me.Panel1.TabIndex = 31
+        '
+        'Button1
+        '
+        Me.Button1.Dock = System.Windows.Forms.DockStyle.Top
+        Me.Button1.Location = New System.Drawing.Point(0, 0)
+        Me.Button1.Name = "Button1"
+        Me.Button1.Size = New System.Drawing.Size(171, 64)
+        Me.Button1.TabIndex = 32
+        Me.Button1.Text = "Button1"
+        Me.Button1.UseVisualStyleBackColor = True
+        '
+        'Panel2
+        '
+        Me.Panel2.Controls.Add(Me.Button2)
+        Me.Panel2.Location = New System.Drawing.Point(258, 916)
+        Me.Panel2.Name = "Panel2"
+        Me.Panel2.Size = New System.Drawing.Size(171, 64)
+        Me.Panel2.TabIndex = 33
+        '
+        'Button2
+        '
+        Me.Button2.Dock = System.Windows.Forms.DockStyle.Top
+        Me.Button2.Location = New System.Drawing.Point(0, 0)
+        Me.Button2.Name = "Button2"
+        Me.Button2.Size = New System.Drawing.Size(171, 64)
+        Me.Button2.TabIndex = 32
+        Me.Button2.Text = "Button2"
+        Me.Button2.UseVisualStyleBackColor = True
+        '
         'frmClientEntry
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 12.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.AutoScroll = True
         Me.BackColor = System.Drawing.Color.White
-        Me.ClientSize = New System.Drawing.Size(480, 1061)
+        Me.ClientSize = New System.Drawing.Size(480, 1031)
+        Me.Controls.Add(Me.Panel2)
+        Me.Controls.Add(Me.Panel1)
         Me.Controls.Add(Me.TextBox9)
         Me.Controls.Add(Me.Label16)
         Me.Controls.Add(Me.TextBox8)
@@ -388,6 +432,8 @@ Partial Class frmClientEntry
         Me.Name = "frmClientEntry"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "tee"
+        Me.Panel1.ResumeLayout(False)
+        Me.Panel2.ResumeLayout(False)
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -424,4 +470,8 @@ Partial Class frmClientEntry
     Friend WithEvents TextBox8 As TextBox
     Friend WithEvents Label16 As Label
     Friend WithEvents TextBox9 As TextBox
+    Friend WithEvents Panel1 As Panel
+    Friend WithEvents Button1 As Button
+    Friend WithEvents Panel2 As Panel
+    Friend WithEvents Button2 As Button
 End Class
